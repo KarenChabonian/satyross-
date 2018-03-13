@@ -14,7 +14,6 @@
 
 <script>
 export default {
-
   name: 'PostSend',
   data () {
     return {
@@ -24,25 +23,10 @@ export default {
       list: []
     }
   },
-
   mounted() {
     this.getPostsList()
   },
-
- getPostsList() {
-      this.$http.get('https://tzf.herokuapp.com/news')
-      
-      .then(response => {
-          console.log(response);
-          return response.body;
-      })
-
-      .then(body => {
-          console.log(body);
-          this.list = body;
-      })
-    },
-
+  
   methods: {
     parseBody(body) {
       const formData = new FormData();
@@ -56,21 +40,18 @@ export default {
       }        
       return formData;
     },
-
-    getAdminsList() {
+     getPostsList() {
       this.$http.get('https://tzf.herokuapp.com/news')
       
       .then(response => {
           console.log(response);
           return response.body;
       })
-
       .then(body => {
           console.log(body);
           this.list = body;
       })
     },
-
     sendPost() {
       let newData = {
         author:this.author,
