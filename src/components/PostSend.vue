@@ -116,7 +116,7 @@ button {
 }
 
 .form {
-  background: #42b983;
+  background: #adf;
   width: 800px;          
   display: flex;
   flex-direction: column;
