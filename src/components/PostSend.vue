@@ -22,6 +22,7 @@
   </div>
 </template>
 
+
 <script>
 let moment = require('moment');
 export default {
