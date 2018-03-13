@@ -148,6 +148,9 @@ button {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  top: -25px;
+  left: 20px;
+  position: relative;
 }
 
 .inform {                    
@@ -165,6 +168,8 @@ button {
 
 .created {
   text-align: right;
+  position: relative;
+  right: 20px;
 
 }
 
